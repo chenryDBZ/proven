@@ -1,7 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {TooltipModule} from 'ngx-bootstrap/tooltip';
+import {BsDatepickerModule, TooltipModule} from 'ngx-bootstrap';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -30,6 +30,7 @@ import {NavbarComponent} from './shared/components/navbar/navbar.component';
         ReactiveFormsModule,
         FormsModule,
         AppRoutingModule,
+        BsDatepickerModule.forRoot(),
         NgbModule.forRoot()
     ],
     providers: [],
