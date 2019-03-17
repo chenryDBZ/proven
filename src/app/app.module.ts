@@ -12,7 +12,10 @@ import {HomeRoutingModule} from './home/home-routing.module';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import {FooterComponent} from './shared/components/footer/footer.component';
 import {ButtonsComponent} from './shared/components/buttons/buttons.component';
-import {NavbarComponent} from './shared/components/navbar/navbar.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatExpansionModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule} from '@angular/material';
+import { LayoutModule } from '@angular/cdk/layout';
+import {MainNavComponent} from './shared/components/main-nav/main-nav.component';
 
 @NgModule({
     declarations: [
@@ -21,17 +24,25 @@ import {NavbarComponent} from './shared/components/navbar/navbar.component';
         LoginComponent,
         UserComponent,
         FooterComponent,
-        NavbarComponent,
         ButtonsComponent,
+        MainNavComponent,
     ],
     imports: [
         BrowserModule,
+        MatExpansionModule,
+        BrowserAnimationsModule,
         HomeRoutingModule,
         ReactiveFormsModule,
         FormsModule,
         AppRoutingModule,
         BsDatepickerModule.forRoot(),
-        NgbModule.forRoot()
+        NgbModule.forRoot(),
+        LayoutModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatSidenavModule,
+        MatIconModule,
+        MatListModule
     ],
     providers: [],
     bootstrap: [AppComponent]
