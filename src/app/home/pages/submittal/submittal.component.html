@@ -1,0 +1,56 @@
+<app-main-nav></app-main-nav>
+<body class="center">
+<span class="btn btn-primary a">Import Resume</span>
+<span class="btn btn-primary a">Paste Resume</span>
+<span class="a">Return to list</span>
+<form class="formplace">
+    <fieldset>
+        <td colspan="1">
+            <div class="input-group form-group ">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Name</span>
+                </div>
+                <input type="text" class="form-control" placeholder="First" aria-describedby="basic-addon1"/>
+                <span class="input-group-addon"></span>
+                <input type="text" class="form-control" placeholder="Last" aria-label="Name"/>
+            </div>
+            <div class="input-group form-group ">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon2">Title</span>
+                </div>
+                <input id="title" type="text" class="col-md-8 form-control" aria-describedby="basic-addon2">
+            </div>
+            <div align="justify" class="input-group form-group ">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon4">Email</span>
+                </div>
+                <input id="email" type="text" class="form-control">
+            </div>
+            <div align="justify" class="input-group form-group ">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon5">Phone</span>
+                </div>
+                <input id="phone" type="text" class="input-group form-control" aria-describedby="basic-addon5">
+            </div>
+            <div align="justify" class="form-group">
+                <label for="adr">Address</label>
+                <textarea id="adr" cols="30" rows="2" class="form-control" placeholder="Street"> </textarea>
+            </div>
+            <div align="justify" class="form-group ">
+                <input id="city" type="text" class="form-control" placeholder="City">
+            </div>
+            <div align="justify" class="form-group ">
+                <input id="state" type="text" class="form-control" placeholder="State">
+            </div>
+            <div align="justify" class="form-group ">
+                <input id="zipcode" type="text" class="form-control" placeholder="ZipCode">
+            </div>
+            <div class="form-group">
+                <label for="comment">Professional Summary</label>
+                <textarea id="comment" cols="30" rows="3" class="form-control"> </textarea>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+        </td>
+    </fieldset>
+</form>
+</body>

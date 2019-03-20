@@ -16,6 +16,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatExpansionModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule} from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
 import {MainNavComponent} from './shared/components/main-nav/main-nav.component';
+import {SubmittalComponent} from './home/pages/submittal/submittal.component';
+import {RegisterComponent} from './home/pages/login/register.component';
 
 @NgModule({
     declarations: [
@@ -25,7 +27,9 @@ import {MainNavComponent} from './shared/components/main-nav/main-nav.component'
         UserComponent,
         FooterComponent,
         ButtonsComponent,
+        RegisterComponent,
         MainNavComponent,
+        SubmittalComponent
     ],
     imports: [
         BrowserModule,

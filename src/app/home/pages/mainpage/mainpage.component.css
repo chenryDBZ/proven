@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    width: 100%;
+}
+form {
+    display: inline-block;
+}
+.form-wrapper {
+    width: auto;
+    margin-left: -50%;
+    margin-top: 50px;
+}
+
+.mytext {
+    width: 300px;
+}
+.half-rule {
+    margin-left: 0;
+    text-align: left;
+    width: 50%;
+}
